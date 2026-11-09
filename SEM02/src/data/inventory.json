@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Leche entera 1 L",
+    "brand": "Colun",
+    "type": "Lácteos",
+    "stock": 48,
+    "unit": "unidades",
+    "status": "Disponible",
+    "icon": "🥛"
+  },
+  {
+    "id": 2,
+    "name": "Arroz grano largo 1 kg",
+    "brand": "Miraflores",
+    "type": "Despensa",
+    "stock": 12,
+    "unit": "unidades",
+    "status": "Stock bajo",
+    "icon": "🍚"
+  },
+  {
+    "id": 3,
+    "name": "Manzanas Fuji",
+    "brand": "Frutas del Sur",
+    "type": "Frutas y verduras",
+    "stock": 86,
+    "unit": "kg",
+    "status": "Disponible",
+    "icon": "🍎"
+  },
+  {
+    "id": 4,
+    "name": "Pan molde integral",
+    "brand": "Ideal",
+    "type": "Panadería",
+    "stock": 0,
+    "unit": "unidades",
+    "status": "Agotado",
+    "icon": "🍞"
+  }
+]
