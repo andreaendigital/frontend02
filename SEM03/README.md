@@ -221,3 +221,18 @@ npm run lint
 ```
 
 La aplicación fue validada con build de producción y lint sin errores ni advertencias.
+
+
+## Screenshots
+
+
+<img width="1152" height="447" alt="Captura de pantalla 2026-11-09 174130" src="https://github.com/user-attachments/assets/8f065d02-6f5a-4ae5-a1a3-2814241c935d" />
+
+<img width="1165" height="349" alt="Captura de pantalla 2026-11-09 174136" src="https://github.com/user-attachments/assets/cebcd428-9075-4515-bf16-dd542c14da06" />
+
+<img width="1176" height="677" alt="Captura de pantalla 2026-11-09 174122" src="https://github.com/user-attachments/assets/7f6e1a80-8f35-4c9c-aadf-299028c9120b" />
+
+<img width="1175" height="536" alt="Captura de pantalla 2026-11-09 174024" src="https://github.com/user-attachments/assets/25126046-5e9a-4458-a0d3-241d669533f9" />
+
+<img width="1169" height="508" alt="Captura de pantalla 2026-11-09 173926" src="https://github.com/user-attachments/assets/95fa3b63-b5c0-41f3-bfd6-a0732ac8f38f" />
+
