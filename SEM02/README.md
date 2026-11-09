@@ -119,6 +119,34 @@ npm run build
 npm run lint
 ```
 
+## Evidencias / Screenshots
+
+<img width="1171" height="887" alt="Captura de pantalla 2026-11-09 141411" src="https://github.com/user-attachments/assets/7cdd6f8a-560f-4f25-bd74-8e89ca2a1a1b" />
+
+
+<img width="1175" height="573" alt="Captura de pantalla 2026-11-09 141430" src="https://github.com/user-attachments/assets/f43bbc56-a4ce-4771-84a2-418f0521333a" />
+
+
+<img width="1179" height="648" alt="Captura de pantalla 2026-11-09 141439" src="https://github.com/user-attachments/assets/d31f5555-c807-49f4-ac33-e08141c55c77" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Estado de la última validación:
 
 - Build de producción: aprobado.
