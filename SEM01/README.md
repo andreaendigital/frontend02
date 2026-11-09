@@ -70,3 +70,17 @@ Para comprobar la compilación y el código, ejecutar:
 npm run build
 npm run lint
 ```
+
+## Screenshoots / Evidencia
+
+<img width="1184" height="902" alt="Captura de pantalla 2026-11-09 115744" src="https://github.com/user-attachments/assets/f7c7d810-3f7a-4abe-9c05-0561560df1c5" />
+
+<img width="1184" height="907" alt="Captura de pantalla 2026-11-09 115750" src="https://github.com/user-attachments/assets/93aed1dc-9a05-48b8-9840-7bb16d58df84" />
+
+<img width="1180" height="904" alt="Captura de pantalla 2026-11-09 115756" src="https://github.com/user-attachments/assets/4eaf40b1-90ee-4c3c-b7b4-c3db162d9b5e" />
+
+
+
+
+
+
