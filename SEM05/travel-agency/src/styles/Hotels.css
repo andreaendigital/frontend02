@@ -1,0 +1,231 @@
+.hotels-section {
+  padding-top: 0.5rem;
+}
+
+.hotels-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hotels-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.hotels-count {
+  background: #f1f5f9;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+}
+
+/* ===== HOTELS GRID ===== */
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.hotel-card {
+  background: var(--white);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card:not(.hotel-unavailable):hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hotel-unavailable {
+  opacity: 0.65;
+}
+
+.unavailable-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  background: rgba(220,38,38,0.9);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+/* Image */
+.hotel-image-wrapper {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hotel-card:not(.hotel-unavailable):hover .hotel-image {
+  transform: scale(1.05);
+}
+
+.hotel-stars-overlay {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.75rem;
+  background: rgba(15,23,42,0.75);
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Body */
+.hotel-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hotel-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.hotel-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+}
+
+.hotel-reviews {
+  background: #fef3c7;
+  color: #d97706;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.hotel-address {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.hotel-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+/* Amenities */
+.hotel-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.amenity-tag {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+/* Footer */
+.hotel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  gap: 0.75rem;
+}
+
+.hotel-price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+.hotel-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.btn-book {
+  padding: 0.55rem 1.3rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+
+.btn-book:hover:not(.btn-disabled) {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn-disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .hotels-grid {
+    grid-template-columns: 1fr;
+  }
+  .hotels-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hotel-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .btn-book {
+    width: 100%;
+    text-align: center;
+  }
+}

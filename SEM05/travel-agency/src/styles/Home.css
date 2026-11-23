@@ -1,0 +1,218 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  background-image: url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15,23,42,0.85) 40%, rgba(14,165,233,0.4) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  color: var(--white);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.hero-highlight {
+  color: var(--secondary);
+}
+
+.hero-desc {
+  max-width: 540px;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background var(--transition), transform var(--transition);
+  box-shadow: 0 4px 20px rgba(14,165,233,0.4);
+}
+
+.btn-hero:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ===== SECTIONS COMUNES ===== */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* ===== CATEGORIES ===== */
+.categories {
+  padding: 5rem 0;
+  background: var(--bg);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.category-card:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.category-card:hover .category-label {
+  color: var(--white);
+}
+
+.category-emoji {
+  font-size: 2.5rem;
+}
+
+.category-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  transition: color var(--transition);
+}
+
+/* ===== CTA ===== */
+.cta-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.cta-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: var(--secondary);
+  color: var(--dark);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition);
+}
+
+.btn-cta:hover {
+  background: #d97706;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
