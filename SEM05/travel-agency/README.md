@@ -338,3 +338,19 @@ En todos los casos, la interfaz muestra:
 - `<LoadingSpinner>` mientras los datos se están obteniendo.
 - Un mensaje de error descriptivo si la petición falla.
 - Los datos renderizados una vez disponibles.
+
+
+###7 Evidencia
+
+<img width="1230" height="819" alt="Captura de pantalla 2026-11-23 125620" src="https://github.com/user-attachments/assets/f4f0deba-3127-4905-ae17-5247896cf6a3" />
+
+<img width="447" height="117" alt="Captura de pantalla 2026-11-23 125627" src="https://github.com/user-attachments/assets/9664eaeb-f874-4401-b7be-e79c11e4a362" />
+
+<img width="1186" height="899" alt="Captura de pantalla 2026-11-23 125639" src="https://github.com/user-attachments/assets/96d16617-36d9-4ebb-8070-a27c658f4446" />
+
+<img width="490" height="794" alt="Captura de pantalla 2026-11-23 125838" src="https://github.com/user-attachments/assets/57f2069f-63dd-4bae-87f4-94f45fa86236" />
+
+
+
+
+
